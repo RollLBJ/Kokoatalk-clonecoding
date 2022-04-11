@@ -1,0 +1,117 @@
+*{
+  object-fit: cover;
+}
+
+.recommended-friends{
+  padding: 25px 0px;
+  border-bottom: var(--main-border);
+}
+.recommended-friends__title{
+  font-size: 12px;
+  color: var(--gray-color);
+}
+
+.recommended-friends span{
+  display: block;
+  margin: 100px 0;
+  text-align: center;
+  color: var(--gray-color);
+  font-weight: 400;
+}
+
+.open-chat__header{
+  display: flex;
+  justify-content: space-between;
+  color: var(--gray-color);
+  padding: 15px 0px;
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+
+.open-post{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+.open-post__column:first-child{
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
+  padding : 5px 0px;
+}
+.open-post__hashtags{
+  color: var(--gray-color);
+  text-transform: uppercase;
+}
+.open-post__members{
+  display: flex;
+  align-items: center;
+}
+.open-post__members .divider{
+  width: 1px;
+  background-color: var(--main-border);
+}
+.open-post__member-count{
+  padding: 0 7px;
+  margin: 0 7px;
+  color: var(--gray-color);
+  border-right: var(--main-border);
+  font-size: 15px;
+}
+.open-post__member-status{
+  color:#FFB3E0;
+}
+.open-post__members img{
+  width:20px;
+  height: 20px;
+  border-radius: 30px;
+  margin-right: -7px;
+}
+.open-post__column:last-child{
+  position: relative;
+}
+.open-post__column:last-child img{
+  width:100px;
+  height: 100px;
+  border-radius: 10px;
+}
+.open-post__title{
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.open-post__column-like{
+  position: absolute;
+  top:70px;
+  right:7px;
+  border-radius: 11px;
+  background-color: rgba(0,0,0,0.5);
+  padding: 5px 7px;
+  color:white;
+
+  display:flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.open-post__like-count{
+  font-size: 9px;
+  font-weight: 400;
+  padding-left: 3px;
+}
+.open-post__column-like i:hover{
+  will-change: transform;
+  animation: heartBeat 1s ease-in-out infinite;
+}
+
+@keyframes heartBeat {
+  0%{
+    color:white;
+  }
+  50%{
+    color: red;
+    transform: scale(1.2);
+  }
+  100%{
+    color:white;
+  }
+}
